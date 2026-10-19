@@ -9,6 +9,7 @@
   <a href="#沙箱"><img src="https://img.shields.io/badge/sandbox-three%20modes-e65100?style=flat-square" alt="沙箱"></a>
   <a href="https://pypi.org/project/openai-codex/0.163.0/"><img src="https://img.shields.io/badge/sdk-openai--codex%200.163.0-ffd21e?style=flat-square" alt="openai-codex 0.163.0"></a>
   <a href="SKILL.md"><img src="https://img.shields.io/badge/Claude%20Code-SKILL.md-f28c45?style=flat-square" alt="SKILL.md"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-4c6ef5?style=flat-square" alt="MIT License"></a>
 </p>
 
 [English](README.md) | 中文
@@ -109,3 +110,7 @@ Codex 看不到这段聊天。目标、怎样算做完、路径、约束、想�
 - `setup.ps1` 是 PowerShell，这条安装路径是 Windows。
 
 给 Claude 看的说明在 [SKILL.md](SKILL.md)。
+
+### 许可证
+
+[MIT](LICENSE)。Copyright (c) 2026 chin1hanwu。

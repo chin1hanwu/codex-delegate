@@ -9,6 +9,7 @@
   <a href="#sandbox"><img src="https://img.shields.io/badge/sandbox-three%20modes-e65100?style=flat-square" alt="Sandbox"></a>
   <a href="https://pypi.org/project/openai-codex/0.163.0/"><img src="https://img.shields.io/badge/sdk-openai--codex%200.163.0-ffd21e?style=flat-square" alt="openai-codex 0.163.0"></a>
   <a href="SKILL.md"><img src="https://img.shields.io/badge/Claude%20Code-SKILL.md-f28c45?style=flat-square" alt="SKILL.md"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-4c6ef5?style=flat-square" alt="MIT License"></a>
 </p>
 
 English | [中文](README.zh.md)
@@ -109,3 +110,7 @@ Codex never sees this chat. The prompt itself needs the goal, what done looks li
 - `setup.ps1` is PowerShell. This install path is Windows.
 
 Claude’s copy of the instructions is [SKILL.md](SKILL.md).
+
+### License
+
+[MIT](LICENSE). Copyright (c) 2026 chin1hanwu.
