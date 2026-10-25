@@ -3,6 +3,7 @@
 <p align="center">把 Claude Code 里的一件事，交给本机已经登录的 Codex。</p>
 
 <p align="center">
+  <a href="#tldr"><img src="https://img.shields.io/badge/TLDR-paste%20to%20Claude-111111?style=flat-square" alt="TL;DR"></a>
   <a href="#快速开始"><img src="https://img.shields.io/badge/get_started-quickstart-149954?style=flat-square" alt="快速开始"></a>
   <a href="#它怎么跑"><img src="https://img.shields.io/badge/runtime-pinned%20sdk-007ec6?style=flat-square" alt="运行时"></a>
   <a href="#参数"><img src="https://img.shields.io/badge/cli-parameters-68448b?style=flat-square" alt="参数"></a>
@@ -14,6 +15,16 @@
 
 [English](README.md) | 中文
 
+## TL;DR
+
+把下面这段直接发给你的 Claude Code，让它安装。
+
+```text
+安装这个 Claude Code skill：https://github.com/chin1hanwu/codex-delegate
+克隆到 $env:USERPROFILE\.claude\skills\codex-delegate ，然后运行里面的 scripts/setup.ps1 。
+以后我说「让 Codex 做 / 看 / 审」，按 SKILL.md 委派，不要直接调用 PATH 上的裸 codex。
+```
+
 **codex-delegate** 是给 Claude Code 用的 skill。一件任务通过固定版本的 [`openai-codex`](https://pypi.org/project/openai-codex/) **0.163.0** 交给 Codex。登录用的是已经写在磁盘上的 ChatGPT 订阅，`~/.codex/auth.json`。运行时打在这个 wheel 里，调用时用这一份，不跟 `PATH` 上的 `codex`，也不跟 `~/.codex/packages` 里的其他拷贝。
 
 <p align="center"><code>Claude Code</code> → <code>codex_run.py</code> → <code>openai-codex 0.163.0</code> → <code>Codex</code></p>
@@ -23,6 +34,8 @@
 ## 快速开始
 
 ### 1. 安装
+
+把上面 [TL;DR](#tldr) 那段发给 Claude Code，让它装。下面是同一件事的命令，想自己敲再用。
 
 Windows，本机有 Python 3，Codex 已经登录过。第一次大约下载 150MB。
 

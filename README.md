@@ -3,6 +3,7 @@
 <p align="center">Hand a Claude Code task to the Codex already signed in on this machine.</p>
 
 <p align="center">
+  <a href="#tldr"><img src="https://img.shields.io/badge/TLDR-paste%20to%20Claude-111111?style=flat-square" alt="TL;DR"></a>
   <a href="#quick-start"><img src="https://img.shields.io/badge/get_started-quickstart-149954?style=flat-square" alt="Quick Start"></a>
   <a href="#how-it-runs"><img src="https://img.shields.io/badge/runtime-pinned%20sdk-007ec6?style=flat-square" alt="Runtime"></a>
   <a href="#parameters"><img src="https://img.shields.io/badge/cli-parameters-68448b?style=flat-square" alt="Parameters"></a>
@@ -14,6 +15,16 @@
 
 English | [中文](README.zh.md)
 
+## TL;DR
+
+Paste this to your Claude Code and let it install.
+
+```text
+Install this Claude Code skill: https://github.com/chin1hanwu/codex-delegate
+Clone it to $env:USERPROFILE\.claude\skills\codex-delegate , then run scripts/setup.ps1 in that folder.
+After that, when I say "have Codex do / look at / review" something, follow SKILL.md. Do not call a bare codex on PATH.
+```
+
 **codex-delegate** is a Claude Code skill. One task goes to Codex through the pinned Python package [`openai-codex`](https://pypi.org/project/openai-codex/) **0.163.0**. Login is the ChatGPT subscription already on disk, `~/.codex/auth.json`. The wheel ships its own runtime, so the call uses that build: not whatever `codex` happens to be on `PATH`, and not the copies under `~/.codex/packages`.
 
 <p align="center"><code>Claude Code</code> → <code>codex_run.py</code> → <code>openai-codex 0.163.0</code> → <code>Codex</code></p>
@@ -23,6 +34,8 @@ English | [中文](README.zh.md)
 ## Quick Start
 
 ### 1. Install
+
+Paste the [TL;DR](#tldr) to Claude Code and let it install. The commands below are the same steps, if you would rather run them yourself.
 
 Windows, Python 3, Codex already logged in. The first download is about 150MB.
 
