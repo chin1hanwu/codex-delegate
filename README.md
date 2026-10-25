@@ -37,7 +37,7 @@ After that, when I say "have Codex do / look at / review" something, follow SKIL
 
 Paste the [TL;DR](#tldr) to Claude Code and let it install. The commands below are the same steps, if you would rather run them yourself.
 
-Windows, Python 3, Codex already logged in. The first download is about 150MB.
+Windows, Python 3, Codex already logged in. This git repo is about 20KB. `setup.ps1` then downloads one `openai-codex-cli-bin` wheel for the current OS. On Windows x64 that wheel is 147MB, because the Codex executable is inside it.
 
 ```powershell
 git clone https://github.com/chin1hanwu/codex-delegate.git "$env:USERPROFILE\.claude\skills\codex-delegate"

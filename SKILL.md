@@ -15,7 +15,7 @@ description: 把一个定义清楚的编码、调查、审查或第二意见任�
 powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.claude\skills\codex-delegate\scripts\setup.ps1"
 ```
 
-它会创建 skill 私有的 venv 并安装固定版本的 `openai-codex`(约 150MB,需联网)。升级版本时给 `-Version` 传新版本号。
+它会创建 skill 私有的 venv，并安装固定版本的 `openai-codex`。仓库本身只有几十 KB。体积来自依赖 `openai-codex-cli-bin`（Windows x64 的 wheel 约 147MB，需联网），里面是随 SDK 固定的 Codex 运行时。pip 只下当前系统这一份。升级版本时给 `-Version` 传新版本号。
 
 ## 调用方式
 

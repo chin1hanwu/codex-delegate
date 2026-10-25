@@ -37,7 +37,7 @@
 
 把上面 [TL;DR](#tldr) 那段发给 Claude Code，让它装。下面是同一件事的命令，想自己敲再用。
 
-Windows，本机有 Python 3，Codex 已经登录过。第一次大约下载 150MB。
+Windows，本机有 Python 3，Codex 已经登录过。这个 git 仓库大约 20KB。`setup.ps1` 会再下载一份当前系统的 `openai-codex-cli-bin`。Windows x64 那份 wheel 是 147MB，因为 Codex 可执行文件打在里面。
 
 ```powershell
 git clone https://github.com/chin1hanwu/codex-delegate.git "$env:USERPROFILE\.claude\skills\codex-delegate"
